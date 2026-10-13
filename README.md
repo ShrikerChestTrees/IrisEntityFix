@@ -30,6 +30,7 @@ It happens with different shader packs and isn't caused by your skin or resource
 | | |
 |---|---|
 | Solid players | Players are no longer see-through |
+| Player heads | Placed, held and worn player heads are solid too |
 | Outlines | Shader effects like world outlines include players again |
 | Everyone | Works for you and other players, in singleplayer and on servers |
 | Toggle | Turn it on and off in game with a key of your choice |
@@ -53,11 +54,12 @@ Invisibility, spectator mode, the first-person hand and all other entities stay 
 
 Vanilla draws players with the translucent entity render type. Iris draws translucent geometry after the shader's deferred passes, so effects in those passes never see the player.
 
-Solid Self swaps that render type for cutout, the one most mobs use, with a single mixin. Players are then drawn together with every other solid entity.
+Solid Self swaps that render type for cutout, the one most mobs use. Players are then drawn together with every other solid entity. Player heads get the same treatment, since vanilla draws them translucent as well.
 
 | File | Purpose |
 |---|---|
-| [`LivingEntityRendererMixin.java`](src/main/java/dev/cloakiy/solidself/mixin/LivingEntityRendererMixin.java) | The fix itself |
+| [`LivingEntityRendererMixin.java`](src/main/java/dev/cloakiy/solidself/mixin/LivingEntityRendererMixin.java) | Fix for players |
+| [`PlayerSkinRenderInfoMixin.java`](src/main/java/dev/cloakiy/solidself/mixin/PlayerSkinRenderInfoMixin.java) | Fix for player heads |
 | [`SolidSelf.java`](src/main/java/dev/cloakiy/solidself/SolidSelf.java) | Toggle key and saved setting |
 
 The [wiki](https://github.com/Cloakyi/solid-self/wiki/How-it-works) explains it in more detail.

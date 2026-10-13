@@ -3,6 +3,12 @@
 All notable changes to Solid Self are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.2.0] - 2026-10-14
+
+### Fixed
+- Player heads are now solid as well: placed heads, heads in item frames, held heads and heads worn by players, mobs or armor stands no longer turn see-through with shaders and get world outlines like other mob heads
+- The toggle key also switches player heads
+
 ## [1.1.0] - 2026-10-04
 
 First public release.
@@ -18,4 +24,5 @@ First public release.
 - Requires Fabric API
 - Semi-transparent skin pixels are shown either fully visible or fully invisible
 
+[1.2.0]: https://github.com/Cloakyi/solid-self/releases/tag/v1.2.0
 [1.1.0]: https://github.com/Cloakyi/solid-self/releases/tag/v1.1.0

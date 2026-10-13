@@ -3,6 +3,6 @@
   "minVersion": "0.8",
   "package": "dev.cloakiy.solidself.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": ["LivingEntityRendererMixin"],
+  "client": ["LivingEntityRendererMixin", "PlayerSkinRenderInfoMixin"],
   "injectors": { "defaultRequire": 1 }
 }
