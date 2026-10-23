@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(LivingEntityRenderer.class)
 public abstract class LivingEntityRendererMixin {
     @Inject(method = "getRenderType", at = @At("RETURN"), cancellable = true)
-    private void entityptgifix$useCutoutForAffectedEntities(
+    private void irisentityfix$useCutoutForAffectedEntities(
             LivingEntityRenderState state,
             boolean bodyVisible,
             boolean translucent,
