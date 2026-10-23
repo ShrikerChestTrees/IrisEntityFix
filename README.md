@@ -2,7 +2,7 @@
 
 # IrisEntityFix (fork Solid Self)
 
-**Cutout rendering for players and piglins in 26.3 (Iris Vulkan/OpenGL). \*Support for SEUS PTGI HRR 2.1 REFORGED**
+**Cutout rendering for piglins, players and they custom player heads in 26.3 (Iris Vulkan/OpenGL). \*Support for SEUS PTGI HRR 2.1 REFORGED**
 
 </div>
 
@@ -10,7 +10,7 @@
 
 ## Issue
 
-From 26.x some entities rendered with [Iris](https://modrinth.com/mod/iris) shaders turn partly see-through from some camera angles especially against a bright sky/PTGI. Shader effects that work on everything else like world outlines skip players completely.
+From 26.x some entities and custom player heads rendered with [Iris](https://modrinth.com/mod/iris) shaders turn partly see-through from some camera angles especially against a bright sky/PTGI. Shader effects that work on everything else like world outlines skips completely.
 
 It happens with different shaders like sVision, SEUS PTGI HRR 2.1 REFORGED, Rethinking Voxels, etc. Upstream report: [Iris #3105](https://github.com/IrisShaders/Iris/issues/3105).
 
@@ -27,11 +27,12 @@ It happens with different shaders like sVision, SEUS PTGI HRR 2.1 REFORGED, Reth
 
 Vanilla draws entities with the translucent entity render type. Iris draws translucent geometry after the shader's deferred passes so effects in those passes never see the entity.
 
-IrisEntityFix swaps that render type for cutout the one most mobs use. Some entities are then drawn together with every other solid entity.
+IrisEntityFix swaps that render type for cutout the one most mobs use. Custom player heads and some entities are then drawn together with every other solid entity.
 
 | File | Purpose |
 |---|---|
 | [`LivingEntityRendererMixin.java`](src/main/java/com/shrikerchesttree/irisentityfix/mixin/LivingEntityRendererMixin.java) | Fix for entities |
+| [`PlayerSkinRenderInfoMixin.java`](src/main/java/com/shrikerchesttree/irisentityfix/mixin/PlayerSkinRenderInfoMixin.java) | Fix for custom player heads |
 
 ## Build
 
