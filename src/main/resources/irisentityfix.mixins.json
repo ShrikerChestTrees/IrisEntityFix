@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.shrikerchesttree.irisentityfix.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "refmap": "irisentityfix.refmap.json",
+  "client": [
+    "LivingEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
