@@ -15,12 +15,12 @@ repositories {
 
 loom {
     mods {
-        "entity_ptgi_fix" {
+        "irisentityfix" {
             sourceSet sourceSets.main
         }
     }
     mixin {
-        defaultRefmapName = "entity-ptgi-fix.refmap.json"
+        defaultRefmapName = "irisentityfix.refmap.json"
     }
 }
 
