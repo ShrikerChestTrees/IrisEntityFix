@@ -10,7 +10,7 @@
 
 ## Issue
 
-From 26.x some entities and custom player heads rendered with [Iris](https://modrinth.com/mod/iris) shaders turn partly see-through from some camera angles especially against a bright sky/PTGI. Shader effects that work on everything else like world outlines skips completely.
+From 26.x some rendering stuff rendered with [Iris](https://modrinth.com/mod/iris) shaders turn partly see-through from some camera angles especially against a bright sky/PTGI. Shader effects that work on everything else like world outlines skips completely.
 
 It happens with different shaders like sVision, SEUS PTGI HRR 2.1 REFORGED, Rethinking Voxels, etc. Upstream report: [Iris #3105](https://github.com/IrisShaders/Iris/issues/3105).
 
