@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "irisentityfix",
+  "id": "irisrenderfix",
   "version": "${version}",
-  "name": "IrisEntityFix (fork Solid Self)",
-  "description": "Cutout rendering for players and piglins in 26.3 (Iris Vulkan/OpenGL).",
+  "name": "IrisRenderFix (fork Solid Self)",
+  "description": "Cutout rendering for players, piglins and other rendering stuff in 26.3 (Iris Vulkan/OpenGL).",
   "authors": ["ShrikerChestTree"],
   "contact": {
     "homepage": "https://github.com/ShrikerChestTrees/IrisEntityFix"
   },
   "license": "MIT",
   "environment": "client",
-  "mixins": ["irisentityfix.mixins.json"],
+  "mixins": ["irisrenderfix.mixins.json"],
   "depends": {
     "fabricloader": ">=0.19.5",
     "minecraft": ">=26.3"
