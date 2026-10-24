@@ -14,13 +14,15 @@ repositories {
 }
 
 loom {
+    accessWidenerPath = file("src/main/resources/irisrenderfix.classtweaker")
+
     mods {
         "irisentityfix" {
             sourceSet sourceSets.main
         }
     }
     mixin {
-        defaultRefmapName = "irisentityfix.refmap.json"
+        defaultRefmapName = "irisrenderfix.refmap.json"
     }
 }
 
