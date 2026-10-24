@@ -3,7 +3,7 @@
   "id": "irisrenderfix",
   "version": "${version}",
   "name": "IrisRenderFix (fork Solid Self)",
-  "description": "Cutout rendering for players, piglins and other rendering stuff in 26.3 (Iris Vulkan/OpenGL).",
+  "description": "Fixed rendering for players, piglins and other stuff in 26.3 (Iris Vulkan/OpenGL).",
   "authors": ["ShrikerChestTree"],
   "contact": {
     "homepage": "https://github.com/ShrikerChestTrees/IrisEntityFix"
