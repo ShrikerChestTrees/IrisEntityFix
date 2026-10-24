@@ -25,9 +25,9 @@ It happens with different shaders like sVision, SEUS PTGI HRR 2.1 REFORGED, Reth
 
 ## How it works
 
-Vanilla draws entities with the translucent entity render type. Iris draws translucent geometry after the shader's deferred passes so effects in those passes never see the entity.
+Vanilla draws some rendering stuff with the translucent render type. Iris draws translucent geometry after the shader's deferred passes so effects in those passes never see the entity or other rendering stuff.
 
-IrisRenderFix swaps that render type for cutout the one most mobs use. Custom player heads and some entities are then drawn together with every other solid entity.
+IrisRenderFix swaps that render type for cutout the one most mobs use. This rendering stuff are then drawn together with every other solid entity.
 
 | File | Purpose |
 |---|---|
@@ -44,7 +44,7 @@ Use JDK 25
 ./gradlew build
 ```
 
-The jar will be in `*/build/libs/*.jar` (no sources!).
+The jar will be in `*/build/libs/*.jar` (no sources!)
 
 <br>
 
