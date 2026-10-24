@@ -6,4 +6,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'irisentityfix'
+rootProject.name = 'irisrenderfix'
