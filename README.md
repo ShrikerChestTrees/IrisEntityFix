@@ -31,10 +31,10 @@ IrisRenderFix swaps that render type for cutout the one most mobs use. Custom pl
 
 | File | Purpose |
 |---|---|
-| [`LivingEntityRendererMixin.java`](src/main/java/com/shrikerchesttree/irisentityfix/mixin/LivingEntityRendererMixin.java) | Fix for entities |
-| [`PlayerSkinRenderInfoMixin.java`](src/main/java/com/shrikerchesttree/irisentityfix/mixin/PlayerSkinRenderInfoMixin.java) | Fix for custom player heads |
-| [`RenderTypesMixin.java`](src/main/java/com/shrikerchesttree/irisentityfix/mixin/RenderTypesMixin.java) | Fix for banners |
-| [`IrisTextShaderProgramMixin.java`](src/main/java/com/shrikerchesttree/irisentityfix/mixin/IrisTextShaderProgramMixin.java) | Fix for signs (text on it) |
+| [`LivingEntityRendererMixin.java`](src/main/java/com/shrikerchesttree/irisrenderfix/mixin/LivingEntityRendererMixin.java) | Fix for entities |
+| [`PlayerSkinRenderInfoMixin.java`](src/main/java/com/shrikerchesttree/irisrenderfix/mixin/PlayerSkinRenderInfoMixin.java) | Fix for custom player heads |
+| [`RenderTypesMixin.java`](src/main/java/com/shrikerchesttree/irisrenderfix/mixin/RenderTypesMixin.java) | Fix for banners |
+| [`IrisTextShaderProgramMixin.java`](src/main/java/com/shrikerchesttree/irisrenderfix/mixin/IrisTextShaderProgramMixin.java) | Fix for signs (text on it) |
 
 ## Build
 
